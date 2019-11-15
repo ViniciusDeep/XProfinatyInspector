@@ -40,7 +40,6 @@ struct ProfanityDictionary {
 
 public extension String {
     
- 
     func containsProfanity() -> Bool {
         
         var hasBadWords = false
@@ -52,11 +51,7 @@ public extension String {
          let words = Set(self.lowercased().components(separatedBy: delimiterSet))
         
         ProfanityDictionary.profaneWords.forEach { (badWord) in
-            if words.contains(badWord) {
-                hasBadWords = true
-            } else {
-                hasBadWords = false
-            }
+            if words.contains(badWord) {hasBadWords = true}
         }
         
         return hasBadWords
