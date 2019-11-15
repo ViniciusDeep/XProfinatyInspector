@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Eat a bag of bucks.".containsProfanity())
+        print("Eat a bag of fuck.".containsProfanity())
     }
 
 
