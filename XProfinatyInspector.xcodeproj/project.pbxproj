@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		794C0620237F4C4500CE7B7F /* profanity.json in Resources */ = {isa = PBXBuildFile; fileRef = 794C061F237F4C4500CE7B7F /* profanity.json */; };
 		7965FFA8237F44A90014A66B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965FFA7237F44A90014A66B /* AppDelegate.swift */; };
 		7965FFAA237F44A90014A66B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965FFA9237F44A90014A66B /* SceneDelegate.swift */; };
 		7965FFAC237F44A90014A66B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965FFAB237F44A90014A66B /* ViewController.swift */; };
@@ -15,7 +16,6 @@
 		7965FFBF237F44AD0014A66B /* XProfinatyInspectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965FFBE237F44AD0014A66B /* XProfinatyInspectorTests.swift */; };
 		7965FFCA237F45E40014A66B /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965FFC9237F45E40014A66B /* Constructor.swift */; };
 		7965FFCF237F46D80014A66B /* XProfinatyInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965FFCE237F46D80014A66B /* XProfinatyInspector.swift */; };
-		7965FFD1237F48590014A66B /* Profanity.json in Resources */ = {isa = PBXBuildFile; fileRef = 7965FFD0237F48590014A66B /* Profanity.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		794C061F237F4C4500CE7B7F /* profanity.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = profanity.json; sourceTree = "<group>"; };
 		7965FFA4237F44A90014A66B /* XProfinatyInspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XProfinatyInspector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7965FFA7237F44A90014A66B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7965FFA9237F44A90014A66B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		7965FFC0237F44AD0014A66B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7965FFC9237F45E40014A66B /* Constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constructor.swift; sourceTree = "<group>"; };
 		7965FFCE237F46D80014A66B /* XProfinatyInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XProfinatyInspector.swift; sourceTree = "<group>"; };
-		7965FFD0237F48590014A66B /* Profanity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Profanity.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 		7965FFD2237F485C0014A66B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				7965FFD0237F48590014A66B /* Profanity.json */,
+				794C061F237F4C4500CE7B7F /* profanity.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -210,8 +210,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794C0620237F4C4500CE7B7F /* profanity.json in Resources */,
 				7965FFB4237F44AC0014A66B /* LaunchScreen.storyboard in Resources */,
-				7965FFD1237F48590014A66B /* Profanity.json in Resources */,
 				7965FFB1237F44AC0014A66B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
