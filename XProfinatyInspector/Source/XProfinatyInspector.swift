@@ -8,20 +8,17 @@
 
 import Foundation
 
-class ProfanityResources {
+class XProfinatyR {
     
-    class func profanityFileURL() -> URL? {
-        return Bundle(for: ProfanityResources.self).url(forResource: "profanity", withExtension: "json")
+    static func profanityFileURL() -> URL? {
+        return Bundle(for: XProfinatyR.self).url(forResource: "profanity", withExtension: "json")
     }
 }
 
-struct ProfanityDictionary {
-    
-    static let profaneWords: [String] = {
+struct XProfinatyWords {
+        static let profaneWords: [String] = {
         
-        guard let fileURL = ProfanityResources.profanityFileURL() else {
-            return []
-        }
+        guard let fileURL = XProfinatyR.profanityFileURL() else {return []}
     
         do {
             let fileData = try Data(contentsOf: fileURL, options: NSData.ReadingOptions.uncached)
@@ -29,28 +26,22 @@ struct ProfanityDictionary {
             guard let words = try JSONSerialization.jsonObject(with: fileData, options: []) as? [String] else {
                 return []
             }
-            
             return words
-            
-        } catch {
-            return []
-        }
+        } catch {return []}
     }()
 }
 
 public extension String {
-    
     func containsProfanity() -> Bool {
-        
         var hasBadWords = false
         
-        var delimiterSet = CharacterSet()
-         delimiterSet.formUnion(CharacterSet.punctuationCharacters)
-         delimiterSet.formUnion(CharacterSet.whitespacesAndNewlines)
+         var charactherSet = CharacterSet()
+         charactherSet.formUnion(CharacterSet.punctuationCharacters)
+         charactherSet.formUnion(CharacterSet.whitespacesAndNewlines)
          
-         let words = Set(self.lowercased().components(separatedBy: delimiterSet))
+         let words = Set(self.lowercased().components(separatedBy: charactherSet))
         
-        ProfanityDictionary.profaneWords.forEach { (badWord) in
+        XProfinatyWords.profaneWords.forEach { (badWord) in
             if words.contains(badWord) {hasBadWords = true}
         }
         
