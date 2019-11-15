@@ -15,6 +15,7 @@
 		7965FFBF237F44AD0014A66B /* XProfinatyInspectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965FFBE237F44AD0014A66B /* XProfinatyInspectorTests.swift */; };
 		7965FFCA237F45E40014A66B /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965FFC9237F45E40014A66B /* Constructor.swift */; };
 		7965FFCF237F46D80014A66B /* XProfinatyInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965FFCE237F46D80014A66B /* XProfinatyInspector.swift */; };
+		7965FFD1237F48590014A66B /* Profanity.json in Resources */ = {isa = PBXBuildFile; fileRef = 7965FFD0237F48590014A66B /* Profanity.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		7965FFC0237F44AD0014A66B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7965FFC9237F45E40014A66B /* Constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constructor.swift; sourceTree = "<group>"; };
 		7965FFCE237F46D80014A66B /* XProfinatyInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XProfinatyInspector.swift; sourceTree = "<group>"; };
+		7965FFD0237F48590014A66B /* Profanity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Profanity.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		7965FFA6237F44A90014A66B /* XProfinatyInspector */ = {
 			isa = PBXGroup;
 			children = (
+				7965FFD2237F485C0014A66B /* Resource */,
 				7965FFCD237F46BF0014A66B /* Source */,
 				7965FFCC237F46BB0014A66B /* Demo */,
 				7965FFB0237F44AC0014A66B /* Assets.xcassets */,
@@ -116,6 +119,14 @@
 				7965FFCE237F46D80014A66B /* XProfinatyInspector.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		7965FFD2237F485C0014A66B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7965FFD0237F48590014A66B /* Profanity.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7965FFB4237F44AC0014A66B /* LaunchScreen.storyboard in Resources */,
+				7965FFD1237F48590014A66B /* Profanity.json in Resources */,
 				7965FFB1237F44AC0014A66B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
