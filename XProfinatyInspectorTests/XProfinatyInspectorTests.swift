@@ -11,24 +11,32 @@ import XCTest
 
 class XProfinatyInspectorTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testProfinatyRepresentation() {
+        XCTAssertNotNil(XProfinatyR.profanityFileURL())
+        XCTAssertNotNil(XProfinatyWords.profaneWords)
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    
+    func testProfinatyArguments() {
+        XCTAssertEqual(true, "bitch".containsProfanity())
+        XCTAssertEqual(true, "fuck of".containsProfanity())
+        XCTAssertEqual(true, "motherfucker".containsProfanity())
+        XCTAssertEqual(true, "cocksuck".containsProfanity())
+        XCTAssertEqual(true, "bestial".containsProfanity())
+        XCTAssertEqual(true, "duche".containsProfanity())
+        XCTAssertEqual(true, "ejakulate".containsProfanity())
+        XCTAssertEqual(true, "ejaculate".containsProfanity())
+        XCTAssertEqual(true, "fanyy".containsProfanity())
+        XCTAssertEqual(true, "dick".containsProfanity())
+        XCTAssertEqual(true, "fingerfucked".containsProfanity())
+        XCTAssertEqual(true, "fucka".containsProfanity())
+        XCTAssertEqual(true, "son-of-a-bitch".containsProfanity())
+        XCTAssertEqual(true, "xxx".containsProfanity())
+        XCTAssertEqual(true, "willy".containsProfanity())
+        XCTAssertEqual(true, "wang".containsProfanity())
+        XCTAssertEqual(true, "twathead".containsProfanity())
+        XCTAssertEqual(true, "titwank".containsProfanity())
     }
 
 }
